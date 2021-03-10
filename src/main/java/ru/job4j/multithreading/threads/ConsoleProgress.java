@@ -1,10 +1,10 @@
 package ru.job4j.multithreading.threads;
 
 public class ConsoleProgress implements Runnable {
-    private final char[] process = {'\\', '|', '/'};
 
     @Override
     public void run() {
+        char[] process = {'\\', '|', '/'};
         try {
             int i = 0;
             while (!Thread.currentThread().isInterrupted()) {
