@@ -26,7 +26,7 @@ public class UserStorage {
         User payer = storage.get(fromId);
         User recipient = storage.get(toId);
         if (payer != null && recipient != null) {
-            if (payer.getAmount() > amount) {
+            if (payer.getAmount() >= amount) {
                 payer.setAmount(payer.getAmount() - amount);
                 recipient.setAmount(recipient.getAmount() + amount);
             } else {
