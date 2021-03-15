@@ -6,7 +6,7 @@ import net.jcip.annotations.ThreadSafe;
 import java.util.Iterator;
 
 @ThreadSafe
-public class SingleLockList <T> implements Iterable<T> {
+public class SingleLockList<T> implements Iterable<T> {
 
     @GuardedBy("this")
     private final SimpleArray<T> array;
