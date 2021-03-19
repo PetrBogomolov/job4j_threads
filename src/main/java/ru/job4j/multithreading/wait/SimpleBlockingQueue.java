@@ -15,8 +15,8 @@ public class SimpleBlockingQueue<T> {
         this.limit = size;
     }
 
-    public synchronized int getSize() {
-        return queue.size();
+    public synchronized boolean isEmpty() {
+        return queue.size() == 0;
     }
 
     public synchronized void offer(T value) {
