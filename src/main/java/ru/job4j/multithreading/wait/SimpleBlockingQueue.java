@@ -37,6 +37,7 @@ public class SimpleBlockingQueue<T> {
                 wait();
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
+                break;
             }
         }
         T value = queue.poll();
