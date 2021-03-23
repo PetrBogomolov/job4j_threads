@@ -1,4 +1,4 @@
-package ru.job4j.multithreading.pooh;
+package ru.job4j.multithreading.pools;
 
 import ru.job4j.multithreading.wait.SimpleBlockingQueue;
 import java.util.LinkedList;
