@@ -23,7 +23,7 @@ public class ParallelSearchIndex<T> extends RecursiveTask<Integer> {
                 return index;
             }
         }
-        return - 1;
+        return -1;
     }
 
     @Override

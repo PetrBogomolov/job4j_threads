@@ -13,8 +13,8 @@ public class RolColSumTest {
     public void whenSeriallySumSuccessful() {
         RolColSum.Sums[] expected = new RolColSum.Sums[] {
                 new RolColSum.Sums(6, 12),
-                new RolColSum.Sums(15,15),
-                new RolColSum.Sums(34,18)
+                new RolColSum.Sums(15, 15),
+                new RolColSum.Sums(34, 18)
         };
         assertThat(RolColSum.seriallySum(matrix), is(expected));
     }
@@ -23,8 +23,8 @@ public class RolColSumTest {
     public void whenAsyncSumSuccessful() throws ExecutionException, InterruptedException {
         RolColSum.Sums[] expected = new RolColSum.Sums[] {
                 new RolColSum.Sums(6, 12),
-                new RolColSum.Sums(15,15),
-                new RolColSum.Sums(34,18)
+                new RolColSum.Sums(15, 15),
+                new RolColSum.Sums(34, 18)
         };
         assertThat(RolColSum.asyncSum(matrix), is(expected));
     }
